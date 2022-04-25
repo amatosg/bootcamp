@@ -1,0 +1,16 @@
+server:
+  port: 8083
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27016
+      database: payments
+  cloud:
+    config:
+     enabled: false
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8088/realms/bootcamp-realm

@@ -1,0 +1,9 @@
+server:
+  port: 8082
+
+application:
+  url:
+    api:
+      transaction: http://localhost:8082/api/transaction
+      favourite: http://localhost:8081/api/favourite
+      utility: http://localhost:8083/api/utility
